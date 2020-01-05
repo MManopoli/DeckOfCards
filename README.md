@@ -7,6 +7,6 @@ To install dependencies:
 
 To run the test suite:
 
-    make test
+    nosetests ...
 
 Test output is written to both `stdout` and `unit-test.log`
