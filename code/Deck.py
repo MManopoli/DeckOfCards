@@ -1,4 +1,5 @@
 from Card import Card
+from Constants import VALID_VALUES, VALID_SUITS
 
 
 class Deck:
@@ -7,8 +8,8 @@ class Deck:
         self.generate_new_deck()
 
     def generate_new_deck(self):
-        for suit in Card.valid_suits:
-            for value in Card.valid_values:
+        for suit in VALID_SUITS:
+            for value in VALID_VALUES:
                 self.cards.append(Card(suit, value))
 
     def shuffle(self):

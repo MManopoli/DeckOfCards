@@ -1,30 +1,23 @@
+from Constants import VALID_SUITS, VALID_VALUES
+
 class Card:
-    # Private (name scrambled) list of valid card values
-    valid_values = [
-        'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen',
-        'King'
-    ]
-
-    # Private (name scrambled) list of valid card suits
-    valid_suits = ['hearts', 'spades', 'clubs', 'diamonds']
-
     def __init__(self, suit, value):
         # Validate and set the card's suit
-        if suit in self.valid_suits:
+        if suit in VALID_SUITS:
             self.suit = suit
         else:
             raise IllegalCardSuitError("A playing card must have one of the "
                                         "following suits: " + ', '.join(
-                                            self.valid_suits
+                                            VALID_SUITS
                                   ))
 
         # Validate and set the card's value
-        if value in self.valid_values:
+        if value in VALID_VALUES:
             self.value = value
         else:
             raise IllegalCardValueError("A playing card must have one of the "
                                         "following values: " + ', '.join(
-                                            self.valid_values
+                                            VALID_VALUES
                                         ))
 
     def __repr__(self):
