@@ -1,6 +1,10 @@
 # DeckOfCards
 Deck of Cards Problem
 
+Python Version:
+
+    Python 3.7.5
+
 To install dependencies:
 
     python -m pip install -r requirements.txt
