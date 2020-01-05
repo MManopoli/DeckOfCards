@@ -1,5 +1,4 @@
 class Card:
-
     # Private (name scrambled) list of valid card values
     valid_values = [
         'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen',
