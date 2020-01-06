@@ -30,10 +30,11 @@ def test_bad_value():
     Card(suit='Spades', value='NotAValue')
     assert False
 
-def test_create_unshuffled_deck():
+def test_create_unshuffled_deck_and_dealOneCard():
     deck = Deck()
     assert str(deck) == "This is a 52 card deck."
     assert str(deck.dealOneCard()) == "The Ace of Hearts"
+    assert len(deck) == 51
 
 def test_deck_equivalence():
     deck1 = Deck()
@@ -45,4 +46,4 @@ def test_create_and_shuffle_deck():
     deck2 = Deck()
     deck1.shuffle()
     assert not deck1 == deck2
-    assert len(deck1.cards) == len(deck2.cards)
+    assert len(deck1) == len(deck2)

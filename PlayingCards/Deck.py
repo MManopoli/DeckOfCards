@@ -35,19 +35,5 @@ class Deck:
                 return True
         return False
 
-
-if __name__ == '__main__':
-    deck = Deck()
-    print(deck)
-    print(repr(deck))
-
-    deck.shuffle()
-    print(repr(deck))
-
-    deck.shuffle()
-    print(repr(deck))
-
-    card = deck.dealOneCard()
-    print(card)
-    print(deck)
-    print(repr(deck))
+    def __len__(self):
+        return len(self.cards)
