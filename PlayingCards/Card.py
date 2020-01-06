@@ -3,7 +3,7 @@ from Constants import VALID_SUITS, VALID_VALUES
 
 class Card:
     """
-    Object implements a playing Card and associated errors
+    Object implements a standard playing Card e.g. An Ace of Hearts
     """
 
     def __init__(self, suit, value):
