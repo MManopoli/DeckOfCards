@@ -6,7 +6,7 @@ class Card:
     Object implements a standard playing Card e.g. An Ace of Hearts
     """
 
-    def __init__(self, suit, value):
+    def __init__(self, suit: str, value: str):
         """
         Creates Card object.  Requires that the suit is valid (must be: Hearts,
         Spades, Clubs, or Diamonds) and the value is valid (must be: Ace, 2, 3,
