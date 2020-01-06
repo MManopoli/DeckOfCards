@@ -131,3 +131,6 @@ dmypy.json
 # IntelliJ
 *.iml
 .idea/
+
+# Testing
+tests.log

@@ -1,0 +1,1 @@
+nosetests -v --nocapture ./tests/tests.py > ./tests.log 2>&1
