@@ -7,6 +7,9 @@ import random
 
 class Deck:
     def __init__(self):
+        """
+        Constructs a new deck containing 52 cards in a non-random order
+        """
         self.cards = []
         self.construct_new_full_deck()
 

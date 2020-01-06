@@ -7,6 +7,13 @@ class Card:
     """
 
     def __init__(self, suit, value):
+        """
+        Creates Card object.  Requires that the suit is valid (must be: Hearts,
+        Spades, Clubs, or Diamonds) and the value is valid (must be: Ace, 2, 3,
+        4, 5, 6, 7, 8, 9, 10, Jack, Queen, or King).
+        :param suit: str
+        :param value: str
+        """
         # Validate and set the card's suit
         if suit in VALID_SUITS:
             self.suit = suit
