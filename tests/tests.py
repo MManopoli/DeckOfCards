@@ -4,11 +4,12 @@ import sys
 path = str(Path(__file__).parent.parent) + '/PlayingCards'
 sys.path.append(path)
 
-print(path)
-
-from Card import Card, IllegalCardSuitError, IllegalCardValueError
+from Card import Card, IllegalCardValueError, IllegalCardSuitError
 from Deck import Deck
 from nose.tools import raises
+
+print(help(Card))
+print(help(Deck))
 
 def test_create_card():
     card = Card(suit='Hearts', value='Ace')
