@@ -33,21 +33,3 @@ class IllegalCardSuitError(Exception):
 
 class IllegalCardValueError(Exception):
     pass
-
-
-if __name__ == "__main__":
-    card = Card(suit='Hearts', value='Ace')
-    print(card)
-    print(repr(card))
-
-    try:
-        bad_card = Card(suit='notasuit', value='Ace')
-    except IllegalCardSuitError:
-        print("IllegalCardSuitError successfully triggered")
-        pass
-
-    try:
-        bad_card = Card(suit='Spades', value='Turkey')
-    except IllegalCardValueError:
-        print("IllegalCardValueError successfully triggered")
-        pass
