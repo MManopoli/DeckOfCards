@@ -12,7 +12,8 @@ class Deck:
 
     def construct_new_full_deck(self):
         """
-        Resets the deck, re-creating all 52 cards in a non-random order
+        Resets the deck, re-creating all 52 cards in the original non-random
+        order
         :return: None
         """
         self.cards = []
@@ -39,15 +40,17 @@ class Deck:
 
     def __str__(self):
         """
-        Implements object string representation
-        :return: String identifying the number of cards in the deck
+        Implements the string representation of the deck object; which gives the
+        number of cards in the deck
+        :return: str
         """
         return f"This is a {len(self.cards)} card deck."
 
     def __repr__(self):
         """
-        Implements object representation for debugging
-        :return: String listing count of Cards and each Card in order
+        Implements a string representation of the deck object for debugging;
+        which lists both the count of Cards and each Card in order
+        :return: str
         """
         return f"{len(self.cards)} cards: {self.cards}"
 
