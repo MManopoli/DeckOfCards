@@ -1,9 +1,13 @@
 # DeckOfCards
 Deck of Cards Problem
 
-Python Version:
+Python version:
 
     Python 3.7.5
+
+Python packages:
+
+    nose
 
 To install dependencies:
 
