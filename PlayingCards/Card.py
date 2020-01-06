@@ -1,5 +1,6 @@
 from Constants import VALID_SUITS, VALID_VALUES
 
+
 class Card:
     def __init__(self, suit, value):
         # Validate and set the card's suit
