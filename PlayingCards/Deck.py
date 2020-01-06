@@ -6,9 +6,9 @@ import random
 class Deck:
     def __init__(self):
         self.cards = []
-        self.generate_new_deck()
+        self.construct_new_full_deck()
 
-    def generate_new_deck(self):
+    def construct_new_full_deck(self):
         for suit in VALID_SUITS:
             for value in VALID_VALUES:
                 self.cards.append(Card(suit, value))
@@ -28,6 +28,12 @@ class Deck:
 
     def __repr__(self):
         return f"{len(self.cards)} cards: {self.cards}"
+
+    def __eq__(self, other):
+        if isinstance(other, Deck):
+            if self.cards == other.cards:
+                return True
+        return False
 
 
 if __name__ == '__main__':

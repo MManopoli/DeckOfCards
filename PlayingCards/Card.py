@@ -27,6 +27,12 @@ class Card:
     def __str__(self):
         return (f"The {self.value} of {self.suit}")
 
+    def __eq__(self, other):
+        if isinstance(other, Card):
+            if (self.suit == other.suit) and (self.value == other.value):
+                return True
+        return False
+
 
 class IllegalCardSuitError(Exception):
     pass
