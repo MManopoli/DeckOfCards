@@ -5,7 +5,7 @@ Python version:
 
     Python 3.7.5
 
-Python packages:
+Additional python packages:
 
     nose
 
