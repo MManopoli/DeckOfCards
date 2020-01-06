@@ -1,3 +1,9 @@
+"""
+
+Module containing constant variables for the PlayingCards library
+
+"""
+
 # Valid playing card values
 VALID_VALUES = (
     'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen',
