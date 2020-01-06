@@ -1,5 +1,6 @@
 from Card import Card
 from Constants import VALID_VALUES, VALID_SUITS
+import random
 
 
 class Deck:
@@ -13,12 +14,14 @@ class Deck:
                 self.cards.append(Card(suit, value))
 
     def shuffle(self):
-        # TODO:
-        pass
+        deck_size = len(self.cards)
+        for i in range(deck_size - 1, 0, -1):
+            r_int = random.randint(0, i)
+            self.cards[i], self.cards[r_int] = self.cards[r_int], self.cards[i]
 
     def dealOneCard(self):
-        # TODO:
-        pass
+        return self.cards.pop(0)
+
 
     def __str__(self):
         return f"This is a {len(self.cards)} card deck."
@@ -29,5 +32,16 @@ class Deck:
 
 if __name__ == '__main__':
     deck = Deck()
+    print(deck)
+    print(repr(deck))
+
+    deck.shuffle()
+    print(repr(deck))
+
+    deck.shuffle()
+    print(repr(deck))
+
+    card = deck.dealOneCard()
+    print(card)
     print(deck)
     print(repr(deck))
