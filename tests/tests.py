@@ -8,28 +8,30 @@ from Card import Card, IllegalCardValueError, IllegalCardSuitError
 from Deck import Deck
 from nose.tools import raises
 
-print(help(Card))
-print(help(Deck))
 
 def test_create_card():
     card = Card(suit='Hearts', value='Ace')
     assert str(card) == "The Ace of Hearts"
     assert repr(card) == "(value: Ace, suit: Hearts)"
 
+
 def test_card_equivalence():
     card1 = Card(suit='Hearts', value='Ace')
     card2 = Card(suit='Hearts', value='Ace')
     assert card1 == card2
+
 
 @raises(IllegalCardSuitError)
 def test_bad_suit():
     Card(suit='NotASuit', value='Ace')
     assert False
 
+
 @raises(IllegalCardValueError)
 def test_bad_value():
     Card(suit='Spades', value='NotAValue')
     assert False
+
 
 def test_create_unshuffled_deck_and_dealOneCard():
     deck = Deck()
@@ -38,10 +40,12 @@ def test_create_unshuffled_deck_and_dealOneCard():
     assert str(deck.dealOneCard()) == "The Ace of Hearts"
     assert len(deck) == 51
 
+
 def test_deck_equivalence():
     deck1 = Deck()
     deck2 = Deck()
     assert deck1 == deck2
+
 
 def test_create_and_shuffle_deck():
     deck1 = Deck()
