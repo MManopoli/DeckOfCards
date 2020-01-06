@@ -33,6 +33,7 @@ def test_bad_value():
 def test_create_unshuffled_deck_and_dealOneCard():
     deck = Deck()
     assert str(deck) == "This is a 52 card deck."
+    assert len(deck) == 52
     assert str(deck.dealOneCard()) == "The Ace of Hearts"
     assert len(deck) == 51
 
