@@ -18,3 +18,7 @@ To run the test suite:
     ./tests.sh
 
 Test output is written to `./tests.log`
+
+Main code location:
+
+    ./PlayingCards
