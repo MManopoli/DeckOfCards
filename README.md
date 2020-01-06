@@ -1,9 +1,13 @@
 # DeckOfCards
 Deck of Cards Problem
 
-Python Version:
+Python version:
 
     Python 3.7.5
+
+Additional python packages:
+
+    nose
 
 To install dependencies:
 
@@ -11,6 +15,6 @@ To install dependencies:
 
 To run the test suite:
 
-    nosetests ...
+    ./tests.sh
 
-Test output is written to both `stdout` and `unit-test.log`
+Test output is written to `./tests.log`
