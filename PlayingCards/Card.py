@@ -36,7 +36,7 @@ class IllegalCardValueError(Exception):
 
 
 if __name__ == "__main__":
-    card = Card(suit='hearts', value='Ace')
+    card = Card(suit='Hearts', value='Ace')
     print(card)
     print(repr(card))
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         pass
 
     try:
-        bad_card = Card(suit='spades', value='Turkey')
+        bad_card = Card(suit='Spades', value='Turkey')
     except IllegalCardValueError:
         print("IllegalCardValueError successfully triggered")
         pass
